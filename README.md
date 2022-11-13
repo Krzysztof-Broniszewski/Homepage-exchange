@@ -13,4 +13,8 @@ This funcion is added by Java Script file.
 - Java Script ES6+
 - normalize.css
 
-DEMO: 
+DEMO: https://krzysztof-broniszewski.github.io/YouCode_Homepage/
+
+![Part of code]Images/part_of_code.jpg
+
+
