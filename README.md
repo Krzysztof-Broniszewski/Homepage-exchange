@@ -11,6 +11,7 @@ This funcion is added by Java Script file.
 - HTML
 - CSS
 - Java Script ES6+
+- BEM convension
 - normalize.css
 
 ## DEMO: https://krzysztof-broniszewski.github.io/YouCode_Homepage/
