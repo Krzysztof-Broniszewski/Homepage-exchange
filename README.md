@@ -15,6 +15,6 @@ This funcion is added by Java Script file.
 
 DEMO: https://krzysztof-broniszewski.github.io/YouCode_Homepage/
 
-![Part of code]Images/part_of_code.jpg
+![Part of code](Images/part_of_code.jpg)
 
 
