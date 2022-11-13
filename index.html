@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="scripts.js"></script>
+    <title>Testowa strona</title>
+</head>
+<body class="body"> <!--bez klasy-->
+    <nav class="navigation"> <!--bez klasy-->
+        <div class="navigation__menu"> <!--class vertical_menu-->
+            <ol class="navigation__field"> <!--id menu-->
+                <li class="navigation__list"><a class="navigation__link" href="index.html">Strona Główna</a> <!-- bez klasy-->
+                <li class="navigation__list"><a class="navigation__link" href="#">O mnie</a>
+                    <ul class="navigation__unordered"> <!--id menu2-->
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 1</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 2</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 3</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 4</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 5</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 6</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__list"><a class="navigation__link" href="#">Gry</a>
+                    <ul class="navigation__unordered">
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 1</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 2</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 3</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 4</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__list"><a class="navigation__link" href="#">Realizacje</a>
+                    <ul class="navigation__unordered">
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 1</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 2</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 3</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 4</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 5</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__list"><a class="navigation__link" href="#">Kontakt</a>
+                    <ul class="navigation__unordered">
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 1</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 2</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 3</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 4</a></li>
+                        <li class="navigation__list-in"><a class="navigation__link-in" href="#">link - 5</a></li>
+                    </ul>
+            </ol>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1 class="header">Główny nagłówek strony</h1>
+            <span class="jumpto">JUMP TO --->>></span>
+            <a class="articleButton" href="#first-article">First article</a>
+            <a class="articleButton" href="#second-article">Second article</a>
+            <a class="articleButton" href="#third-article">Third article</a>
+        </div>
+    </header>
+    <div class="buttonContainer">
+        <button class="buttonCube js-buttonCube"><span class="buttonCube__themename js-buttonCube__themename">Remove</span> the CUBE</button>
+    </div>
+    <div class="tableContainer">
+        <table class="cartable">
+            <caption class="cartable__title">Tabelka samochodów osobowych</caption>
+            <thead>
+                <tr class="cartable__row">
+                    <th class="cartable__cell cartable__header" scope="col">Marka</th>
+                    <th class="cartable__cell cartable__header" scope="col">Model</th>
+                    <th class="cartable__cell cartable__header" scope="col">Nadwozie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cartable__row">
+                    <th class="cartable__cell cartable__header" scope="row" rowspan="2">Audi</th>
+                    <td class="cartable__cell">A4</td>
+                    <td class="cartable__cell">Avant</td>
+                </tr>
+                <tr class="cartable__row">
+                    <td class="cartable__cell">A6</td>
+                    <td class="cartable__cell">Avant</td>
+                </tr>
+                <tr class="cartable__row">
+                    <th class="cartable__cell cartable__header" scope="row">BMW</th>
+                    <td class="cartable__cell">E36</td>
+                    <td class="cartable__cell">Sedan</td>
+                </tr>
+                <tr class="cartable__row">
+                    <th class="cartable__cell cartable__header" scope="row">Volkswagen</th>
+                    <td class="cartable__cell">Lupo</td>
+                    <td class="cartable__cell">Hatchback</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="wrapper">
+        <div class="box_area">
+            <div class="box box_front"></div>
+            <div class="box box_right"></div>
+            <div class="box box_back"></div>
+            <div class="box box_left"></div>
+            <div class="box box_top"></div>
+            <div class="box box_bottom"></div>
+        </div>
+    </div>
+    <section id="first-article" class="section">
+        <h2>First article</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam ut pariatur illo laboriosam dolore possimus voluptates rem, quo tempora officiis, voluptatem ipsum veritatis eos voluptatum quos! Ipsam fugit illo illum rerum error, ab esse sit dolores perferendis consectetur quo odio. Totam expedita minus officia maiores nisi assumenda, necessitatibus nostrum. Exercitationem doloribus magni minima temporibus dolorem provident ipsum cumque dolores, aliquid reprehenderit nemo corporis perferendis quo atque debitis porro expedita vitae consequatur id ut. Laborum dolor illo neque aperiam, distinctio, veritatis unde vero, nihil incidunt et officiis in. Natus, harum. Quasi blanditiis voluptas, laudantium consectetur tenetur, nisi, omnis assumenda officia natus nemo deserunt libero enim neque. Tempore, quod! Laudantium voluptatibus dolores ratione aliquam repellat nesciunt doloremque. Corporis dolore est tempora quidem temporibus vel, corrupti rerum itaque nemo adipisci nulla, quasi reprehenderit excepturi distinctio repellendus suscipit, consectetur incidunt sit pariatur aliquam! Dicta dolorem ipsum sequi reprehenderit cupiditate facere, deserunt possimus officia quo consequatur neque? Atque fugit sapiente, quidem quos asperiores alias eveniet, rerum doloremque, nihil dignissimos maiores? Impedit doloribus, iste ratione nihil velit similique. Molestiae soluta rerum, dignissimos, eaque harum, ipsum necessitatibus quam architecto similique vero illo corrupti cupiditate? Vel ad porro, quam dolores tempore quidem mollitia reiciendis expedita adipisci deleniti!</p>
+    </section>
+    <section id="second-article" class="section">
+        <h2>Second article</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla rerum vero corporis quis quidem pariatur magnam laborum, atque, velit exercitationem esse quod, minus doloremque corrupti ducimus voluptates sit! Aut veritatis aliquam libero quos placeat, minus nisi ad expedita incidunt aperiam temporibus accusantium eaque quas laboriosam, facere vero officiis voluptatum molestiae consectetur reprehenderit rerum atque voluptatibus. Accusantium nihil fugit laborum expedita sequi perferendis quaerat doloribus quam, quo, quod facere aliquam soluta dolorum, quia autem velit officia provident vel! At voluptas atque ut officiis! Nobis voluptas id ut praesentium fugiat, velit dolores debitis labore hic delectus quibusdam quas quaerat quae? Quibusdam, iure.</p>
+    </section>
+    <section id="third-article" class="section">
+        <h2>Third article</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nemo. Repudiandae quisquam dolorum enim, praesentium non vel nihil neque temporibus ratione cumque. Quibusdam impedit vel consequatur provident delectus accusantium eos expedita consectetur odit, perspiciatis, odio labore reprehenderit corrupti fugiat blanditiis magnam dolores numquam at recusandae sapiente laboriosam! Atque, hic dolorem.</p>
+    </section>
+    <footer class="footer">
+        <div class="footer__content">&copy 2022 Krzysztof Broniszewski - Wszelkie prawa zastrzeżone.</div>
+    </footer>
+</body>
+</html>

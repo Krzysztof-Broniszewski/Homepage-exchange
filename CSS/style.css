@@ -1,0 +1,312 @@
+/* basic style start */
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+/* basic style end */
+
+.body {
+    background: #000;
+    margin: 70px auto;
+    max-width: 1000px;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.navigation__menu {
+    background-color: black;
+    color: white;
+    z-index: 100;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+* {
+    margin: 0 auto 10px auto;
+    padding: 0;
+}
+
+/* first layer of menu start */
+.navigation__list {
+    text-align: center;
+    float: left;
+    display: block;
+    width: 20%;
+}
+
+.navigation__field a {
+    text-decoration: none;
+}
+
+.navigation__link {
+    padding: 5px;
+    display: block;
+    color: white;
+    border: 1px dashed white;
+    border-top: none;
+    border-bottom: none;
+}
+
+.navigation__link:hover {
+    background-color: white;
+    color: red;
+}
+/* first layer of menu end */
+
+/* second layer of menu start */
+.navigation__unordered {
+    width: 20%;
+    position: absolute;
+    list-style-type: none;
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+.navigation__list-in {
+    position: relative;
+}
+
+.navigation__link-in {
+    width: 100%;
+    border-top: 1px dashed white;
+    color: white;
+    display: none;
+}
+
+.navigation__link:hover {
+    background-color: white;
+    color: red;
+}
+
+.navigation__list:hover>.navination__link-in {
+    display: block;
+}
+
+/* trird layer of menu start DISABLED NOW*/
+/* #menu>li>ul>ol {
+    list-style-type: none;
+}
+
+#menu>li>ul>ol {
+    display: block;
+    position: absolute;
+    left: 100%;
+    width: 150%;
+}
+
+#menu>li>ul>ol>li {
+    background-color: #ccc;
+}
+
+#menu>li>ul>li>ol>li {
+    display: block;
+    color: red;
+}
+
+#menu>li>ul>ol>li>a {
+    display: block;
+    color: white;
+}
+
+#menu3 li a {
+    display: block;
+    color: violet;
+    background-color: aqua;
+}
+
+#menu3 li:hover {
+    background-color: blueviolet;
+    display: block;
+}
+
+#menu3 li:hover a {
+    color: red;
+} */
+/* third layer of menu end DISABLED NOW */
+
+.container {
+    border-radius: 15px;
+}
+
+.buttonCube {
+    margin: 10px auto 10px 50px;
+    padding: 5px 10px;
+    width: 200px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.buttonCube:hover {
+    background-color: rgb(173, 54, 74);
+}
+
+.buttonCube__themename {
+    background-color: transparent;
+}
+
+.header {
+    text-align: center;
+    color: red;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.jumpto {
+    color: red;
+    margin-left: 50px;
+}
+
+.articleButton {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.articleButton:hover {
+    color: red;
+}
+
+.tableContainer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    width: 90%;
+    overflow-x: auto;
+}
+
+.cartable {
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+}
+
+.cartable__title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.cartable__cell {
+    border: 1px solid white;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.cartable__cell:hover {
+    background-color: rgb(51, 48, 48);
+}
+
+.cartable__header {
+    background-color: crimson;
+    color: white;
+}
+
+.cartable__header:hover {
+    background-color: rgb(173, 54, 74);
+}
+.cartable__row:hover {
+    color: red;
+}
+
+.wrapperNo {
+    display: none;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 1500px;
+}
+
+.box_area {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 0, 360deg);
+    }
+}
+
+.box {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: white;
+    background-image: url("https://i.ibb.co/GsCFgY5/Portret.jpg");
+    background-size: cover;
+    border: 2px solid blue;
+}
+
+.box_front {
+    transform: translate(-200px, -200px) translateZ(200px);
+}
+
+.box_back {
+    transform: translate(-200px, -200px) translateZ(-200px);
+}
+
+.box_left {
+    transform: translate(0, -200px) rotateY(270deg);
+}
+
+.box_right {
+    transform: translate(-400px, -200px) rotateY(90deg);
+}
+
+.box_top {
+    transform: translate(-200px, -400px) rotateX(90deg);
+}
+
+.box_bottom {
+    transform: translate(-200px, 0px) rotateX(90deg);
+}
+
+.footer {
+    margin: 10px auto;
+    display: block;
+    bottom: 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border-top: 1px solid white;
+}
+
+.footer__content {
+    padding: 10px;
+}
+
+.section {
+    color: white;
+    margin: 50px;
+    font-size: 20px;
+}
+
+.article {
+    font-size: 35px;
+    text-align: center;
+    justify-content:center;
+}
