@@ -14,7 +14,7 @@ This funcion is added by Java Script file.
 - BEM convension
 - normalize.css
 
-## DEMO: https://krzysztof-broniszewski.github.io/YouCode_Homepage/
+## DEMO: https://krzysztof-broniszewski.github.io/Oszust-TanieNadawanie/
 
 ![Part of code](Images/part_of_code.jpg)
 
